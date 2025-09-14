@@ -1,7 +1,7 @@
 <?php
 
     $host = "localhost";
-    $database = "qpg";
+    $database = "question_paper_genarator";
     $user = "root";
     $password = "";
 
@@ -10,5 +10,4 @@
         die("Connection Error");
     }
     
-
 ?>

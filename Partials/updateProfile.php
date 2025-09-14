@@ -14,13 +14,11 @@
     $email = "";
     $phno = "" ;
     $gender = "";
-    $username = "";
     $institute = "";
     $fnameErr = "";
     $lnameErr = "";
     $emailErr = "";
     $phnoErr = "";
-    $usernameErr = "";
     $genderErr = "";
     $instituteErr = "";
     $successfull = false;
@@ -35,7 +33,6 @@
         if(isset($_POST["submithojabhai"]) && $_POST["submithojabhai"] == "Update"){
             $fname = $_POST["fname"];
             $lname = $_POST["lname"];
-            $username = $_POST["username"];
             $email = $_POST["email"];
             $phno = $_POST["phno"];
             $valid = true;
@@ -59,7 +56,6 @@
     
             $fname = trim($fname);
             $lname = trim($lname);
-            $username = trim($username);
             $email = trim($email);
             $phno = trim($phno);
             if(empty($fname)){
@@ -68,10 +64,6 @@
             }
             if(empty($lname)){
                 $lnameErr = "Last Name Can Not be Empty.!";
-                $valid = false;
-            }
-            if(empty($username)){
-                $usernameErr = "User Name Can Not be Empty.!";
                 $valid = false;
             }
             if(empty($email)){
@@ -249,7 +241,7 @@
                             <div class="my-4">
                                 <label for="username" class="text-white">Username :</label>
                                 <br>
-                                <input type="text" id="username" name="username" value="<?php echo $username;?>" placeholder="Enter  Username " class="p-2 my-2 rounded-lg shadow-lg" onkeyup="checkUsernameExists()" required>
+                                <input type="text" id="username" name="username" value="<?php echo $username;?>" placeholder="Enter  Username " class="p-2 my-2 rounded-lg shadow-lg" onkeyup="checkUsernameExists()" disabled>
                                 <p class='text-red-500 my-3 ' id='usernameErr'>      </p>
                                 <?php
                                     if($usernameErr){
