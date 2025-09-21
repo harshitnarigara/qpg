@@ -14,13 +14,11 @@
     $email = "";
     $phno = "" ;
     $gender = "";
-    $username = "";
     $institute = "";
     $fnameErr = "";
     $lnameErr = "";
     $emailErr = "";
     $phnoErr = "";
-    $usernameErr = "";
     $genderErr = "";
     $instituteErr = "";
     $successfull = false;

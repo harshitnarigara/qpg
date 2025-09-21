@@ -314,7 +314,7 @@ $headers .= "MIME-Version: 1.0" . "\r\n"; // Append this line
                                     <input type="number" name="phno" value="<?php echo $phno;?>" placeholder="Enter Phone Number " class="p-2 my-2 rounded-lg shadow-lg" required>
                                     <?php
                                         if($phnoErr){
-                                            echo "<p class='text-red-500 my-3 '> $phnoErr </p>";
+                                            echo "<p class='text-red-500 my-3'> $phnoErr </p>";
                                         }
                                     ?>
                                 </div>
@@ -352,9 +352,9 @@ $headers .= "MIME-Version: 1.0" . "\r\n"; // Append this line
         </div>
     </main>
 
-    <footer class="bg-white bottom-0  p-[1vh] fixed w-screen ">
+    <footer class="bg-white bottom-0  p-[1vh] fixed w-screen">
             <section class="flex justify-center items-center">
-                <p class="font-serif antialiased font-black lg:text-xl text-base	"></p>
+                <p class="font-serif antialiased font-black lg:text-xl text-base"></p>
                 Developed With <img src="./Assets/Icons/HeartIcon.svg" class="h-5 w-5 mx-2" alt="Heart Icon">
                  By Team LinkedList
             </section>
